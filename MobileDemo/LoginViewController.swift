@@ -10,6 +10,12 @@ import UIKit
 
 class LoginViewController: UIViewController, UITextFieldDelegate {
     
+    @IBAction func loginPrimaryAction(sender: AnyObject) {
+        
+        doLogin()
+    
+    }
+    
     @IBOutlet weak var userField: UITextField!
     @IBOutlet weak var passField: UITextField!
     @IBOutlet weak var loginBtn: UIButton!
@@ -33,6 +39,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         passField.enabled = true
         userField.text = ""
         passField.text = ""
+        
 
     }
     
